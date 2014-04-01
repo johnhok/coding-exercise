@@ -16,10 +16,28 @@
   </head>
   <body>
 
+    <div id="page-wrapper">
+      <h1 id="logo" class="hide-text">Awesome Bands</h1>
 
+      <ol id="awesome-bands-list" class="ranking-list">
+        <!-- rankings get populated here -->
+      </ol>
+    </div>
+
+    <!-- JS Templating -->
+    <script type="text/template" id="rank-item-template">
+    <% _.each(response, function(item) { %>
+    <li class="rank-item">
+      <h2 class="rank-title"><%- item.name %></h2>
+      <p class="rank-stats"><em><%- item.count %></em> Mentions</p>
+    </li>
+    <% }) %>
+    </script>
 
     <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/underscore.js"></script>
     <script src="./js/lib.js"></script>
     <script src="./js/script.js"></script>
 
