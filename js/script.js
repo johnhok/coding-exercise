@@ -54,7 +54,7 @@
 			this.$rankingList.html(this.rankItemTemplate({
 				response: response
 			}));
-
+console.log(this.$rankingList.html());
 			// Stagger animate the ranking items into view
 			TweenMax.staggerTo($('.rank-item'), 0.5, {opacity: 1}, 0.07);
 		},
