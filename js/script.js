@@ -78,7 +78,7 @@
 		AwesomeBandsController.init({
 			poller: massrel.Poller,
 			pollerOptions: {
-				frequency: 5
+				frequency: 15
 			}
 		});
 	});
