@@ -1,0 +1,89 @@
+/* Global */
+body {
+	background: #333 url('../img/body-bg.gif') repeat;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/**/
+
+/* Page */
+#logo {
+	background: transparent url('../img/page-title.png') no-repeat;
+	margin: 35px auto;
+	width: 594px;
+	height: 91px;
+}
+
+#awesome-bands-list {
+	margin: 0 auto;
+	width: 455px;
+}
+/**/
+
+/* Ranking List Module */
+.ranking-list {
+	background-color: #1d1d1d;
+	background-color: rgba(29, 29, 29, 0.9);
+
+	border: 4px solid #d0cfcf;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.ranking-list .rank-item:last-child {
+	border: 0;
+}
+
+.ranking-list .rank-item {
+	border-bottom: 1px solid #3f3f3f;
+	padding: 0 25px;
+	color: #fff;
+	
+	filter: alpha(opacity=0);
+	-moz-opacity: 0; 
+	opacity: 0;
+}
+
+/**
+ * Clearfix hack, prefer to include it here vs littering
+ * the DOM with clearfix classes everywhere...
+ */
+.ranking-list .rank-item:before,
+.ranking-list .rank-item:after {
+    content: " ";
+    display: table;
+}
+
+.ranking-list .rank-item:after {
+    clear: both;
+}
+
+.ranking-list .rank-title {
+	font-size: 18px;
+	float: left;
+	margin: 11px 0;
+}
+
+.ranking-list .rank-stats {
+	font-size: 14px;
+	float: right;
+	margin: 11px 0;
+}
+
+.ranking-list .rank-stats em {
+	color: #9e0b0f;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+}
+/**/
